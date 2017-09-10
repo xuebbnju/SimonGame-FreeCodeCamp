@@ -1,0 +1,206 @@
+@import url('https://fonts.googleapis.com/css?family=Alfa+Slab+One|VT323|Oswald');
+*{
+    margin: 0;
+    padding: 0;
+
+}
+html{
+}
+html,body{
+   background: #ccc;
+    color: #333;  
+    width: 100%;
+    height: 100%;  
+  font-size:20px;
+  background-image: url('https://i.loli.net/2017/09/09/59b3786c6bcd6.png');
+
+}
+.fix::after{
+  content: "";
+  height: 0;
+  line-height: 0;
+  display: block;
+  clear: both;
+  visibility: hidden;
+}
+.fix{
+  zoom: 1;
+}
+.wrap{
+    width: 472px;
+    height: 472px;
+    margin:5% auto;
+     border-radius:50%;
+   box-shadow: 0px 0px 12px #222;
+   position: relative;
+/*  border:  12px solid #333;*/
+  background-color: #333;
+  padding:12px 0 0 12px;
+    
+}
+.wrap main{
+ 
+ margin:auto auto;
+
+
+
+}
+.wrap main .push{
+width:224px;
+height:224px;
+
+ pointer-events : auto;
+  cursor:pointer;
+display: inline-block;
+  float: left;
+
+  border:  12px solid #333;
+}
+.wrap main .push.unclickable{
+  pointer-events:none;
+}
+
+.wrap main .left-top{
+  border-top-left-radius : 100%;
+
+background-color : #00a74a;
+ 
+
+
+}
+.wrap main .left-top.light{
+  background-color : #13ff7c;
+}
+.wrap main .right-top{
+  border-top-right-radius : 100%;
+
+  background-color : #9f0f17;
+
+ 
+}
+.wrap main .right-top.light{
+  background-color : #ff4c4c;
+}
+.wrap main .left-bottom{
+
+border-bottom-left-radius : 100%;
+background-color : #cca707;
+}
+.wrap main .left-bottom.light{
+ background-color : #fed93f;
+}
+.wrap main .right-bottom{
+
+ border-bottom-right-radius : 100%;
+ background-color : #094a8f;
+}
+.wrap main .right-bottom.light{
+    background-color : #1c8cff;
+}
+.wrap .control{
+  position: absolute;
+  width: 232px;
+  height: 232px;
+  border-radius: 50%;
+  border:  12px solid #333;
+  background-color:#ECE7EE;
+  top: 25%;
+  left: 25%;
+
+  text-align: center;
+  color : #222;
+
+
+font-size:0.7em;
+
+}
+.inline{
+  display: inline-block;
+}
+
+.wrap .control .title{
+font-family: 'Alfa Slab One', cursive;
+  
+  font-size: 3.2em;
+  margin-top : 20px;
+}
+.wrap .control p{
+  font-family : 'Oswald',Arial,sans;
+font-size:1em;
+ vertical-align: middle;
+}
+.wrap .control .count-box #count{
+  width : 50px;
+  height: 40px;
+background-color: #32050C;
+color: #DC0D29;
+border : 4px solid #222;
+border-radius : 10px;
+line-height:40px;
+font-size: 1.5em;
+}
+.wrap .control .count-box #count.countOff{
+  
+  color:#430710;
+}
+.wrap .control .btn-box{
+  width: 30px;
+ 
+  margin: 0 10px;
+}
+.wrap .control .btn-box #circle{
+ width:10px;
+height:10px;
+background-color: #32050C;
+border: 2px solid #222;
+  border-radius: 50%;
+}
+.wrap .control .btn-box #circle.strictOn{
+   background-color:#DC0D29;
+}
+.wrap .control .btn-box button{
+  display: block;
+  width : 30px;
+height : 30px;
+border-radius : 50%;
+border : 4px solid #444;
+box-shadow : 0px 2px 3px #222;
+margin-bottom: 5px;
+cursor: pointer;
+}.wrap .control .btn-box button.unclickable{
+  pointer-events:none;
+}
+.wrap .control .btn-box #start{
+background-color : #FC0102;
+}
+.wrap .control .btn-box #strict{
+background-color : yellow;
+}
+.wrap .control .switch-box{
+  padding-top: 10px;
+  height: 30px;
+
+}
+
+.wrap .control .switch-box #switch{
+  height:20px;
+width:40px;
+background-color : #222;
+border-radius:2px;
+cursor: pointer;
+/*vertical-align: middle;
+*/text-align: left;
+}
+.wrap .control .switch-box #switch #switch-btn{
+  height:20px;
+width: 20px;
+border-radius:4px;
+background-color : #3193DE;
+position:relative;
+border : 2px solid #333;
+
+
+}
+.wrap .control .switch-box .open#switch #switch-btn{
+  left: 20px;
+}
